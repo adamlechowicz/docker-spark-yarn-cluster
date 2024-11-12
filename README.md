@@ -1,10 +1,10 @@
-# Docker hadoop Yarn cluster for Spark 3.x
+# Docker Hadoop Yarn cluster for Spark 3.x
 
 <p align="center">
   <img src="logo.jpg">
 </p>
 
-Provides Docker multi-nodes Hadoop cluster with Spark 3.x on Yarn cluster.
+Provides a Docker multi-node Hadoop cluster with Spark 3.x on Yarn cluster.  Tested working on Ubuntu 24.04 arm64 VM (using UTM on Apple Silicon)
 
 * [Usage](#usage)
   * [Build](#build)
