@@ -60,7 +60,7 @@ spark-shell --master yarn --deploy-mode client
 #### spark submit
 
 ```bash
-spark-submit --master yarn --deploy-mode cluster --num-executors 2 --executor-memory 4G --executor-cores 4 --class org.apache.spark.examples.SparkPi $SPARK_HOME/examples/jars/spark-examples [TAB]
+spark-submit --master yarn --deploy-mode cluster --class org.apache.spark.examples.SparkPi $SPARK_HOME/examples/jars/spark-examples_2.12-3.0.2.jar
 ```
 
 #### Web UI
