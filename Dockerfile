@@ -3,11 +3,12 @@ FROM ubuntu:24.04
 
 USER root
 
-RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y openssh-server openjdk-8-jre wget scala
+RUN apt-get update && apt-get install -y openssh-server openjdk-8-jre wget scala
 RUN  apt-get -y update
 RUN  apt-get -y install zip 
 RUN  apt-get -y install vim
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+# note: you may have to edit the following line for intel machines ("amd64" instead of "arm64")
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-arm64
 
 RUN ssh-keygen -t rsa -f $HOME/.ssh/id_rsa -P "" \
     && cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
