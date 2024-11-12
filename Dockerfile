@@ -1,9 +1,9 @@
-FROM ubuntu:16.04
+FROM ubuntu:24.04
 
 
 USER root
 
-RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y openssh-server default-jdk wget scala
+RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y openssh-server openjdk-8-jre wget scala
 RUN  apt-get -y update
 RUN  apt-get -y install zip 
 RUN  apt-get -y install vim
